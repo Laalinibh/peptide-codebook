@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the preprint."
+title: "Non-Isobaric Is Not Enough: Gap-Merge Safety for Unambiguous Peptide Readout"
+authors:
+  - family-names: Bhogadi
+    given-names: Laalini
+    orcid: "https://orcid.org/0009-0007-3275-5650"
+type: software
+license: MIT
+preferred-citation:
+  type: article
+  title: "Non-Isobaric Is Not Enough: Gap-Merge Safety for Unambiguous Peptide Readout"
+  authors:
+    - family-names: Bhogadi
+      given-names: Laalini
+      orcid: "https://orcid.org/0009-0007-3275-5650"
+  year: 2026
+  notes: "Preprint, ChemRxiv"

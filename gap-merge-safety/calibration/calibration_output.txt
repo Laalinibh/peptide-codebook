@@ -1,0 +1,41 @@
+massivekb: 320 identified unmodified peptides used, 180 modified peptides skipped
+casanovo: 103 identified unmodified peptides used
+
+=== massivekb -- MassIVE-KB HCD subset distributed with ms2pip (500 identified spectra) ===
+cleavage sites analysed        4247
+fragment observed (b or y)     0.752  [95% CI 0.738, 0.764]
+  -> empirical p_drop          0.248
+b-ion observation rate         0.305
+y-ion observation rate         0.654
+non-proline baseline keep      0.758   (n=3654)
+keep N-terminal to Pro         0.818   (n=303)   factor 1.08  [model 1.60]
+keep C-terminal to Pro         0.614   (n=316)   factor 0.81  [model 0.35]
+y rate, C-term basic           0.670   (n=3574)
+y rate, C-term not basic       0.350   (n=80)
+  -> charge-retention ratio    1.91   [model 1.15/0.85 = 1.35]
+
+=== casanovo -- Annotated sample spectra distributed with Casanovo (128 identified spectra) ===
+cleavage sites analysed        865
+fragment observed (b or y)     0.723  [95% CI 0.692, 0.751]
+  -> empirical p_drop          0.277
+b-ion observation rate         0.331
+y-ion observation rate         0.665
+non-proline baseline keep      0.726   (n=744)
+keep N-terminal to Pro         0.877   (n=65)   factor 1.21  [model 1.60]
+keep C-terminal to Pro         0.508   (n=65)   factor 0.70  [model 0.35]
+y rate, C-term basic           0.664   (n=739)
+y rate, C-term not basic       0.600   (n=5)
+  -> charge-retention ratio    1.11   [model 1.15/0.85 = 1.35]
+
+=== pooled ===
+cleavage sites analysed        5112
+fragment observed (b or y)     0.747  [95% CI 0.735, 0.758]
+  -> empirical p_drop          0.253
+b-ion observation rate         0.309
+y-ion observation rate         0.656
+non-proline baseline keep      0.753   (n=4398)
+keep N-terminal to Pro         0.829   (n=368)   factor 1.10  [model 1.60]
+keep C-terminal to Pro         0.596   (n=381)   factor 0.79  [model 0.35]
+y rate, C-term basic           0.669   (n=4313)
+y rate, C-term not basic       0.365   (n=85)
+  -> charge-retention ratio    1.83   [model 1.15/0.85 = 1.35]

@@ -1,0 +1,57 @@
+
+################ IDEAL (reproduces the paper's stated process)
+   {'pro_enh': 1.0, 'pro_sup': 1.0, 'y_basic': 0.0, 'y_nonbasic': 0.0, 'both_series': False}
+
+-- Table 1: silent vs detected, 18-mers, tau = 0.01 Da, exact masses
+ p_drop   V silent   V detect  NI silent  NI detect
+   0.00     0.0000     0.0000     0.0000     0.0000
+   0.10     0.0000     0.0932     0.0004     0.0929
+   0.20     0.0000     0.1894     0.0008     0.1886
+   0.30     0.0000     0.2854     0.0011     0.2843
+   0.40     0.0000     0.3825     0.0013     0.3812
+
+-- Table 2: planted motifs, silent-error rate
+ motif      decoder    p=0.1    p=0.3   note
+    GG   ASCTVPLNDG   0.0077   0.0182   contains N
+    GA   ASCTVPLNDG   0.0012   0.0037   no Q
+    GA  ASCTVPLNDGQ   0.0070   0.0166   contains Q
+    GG    ASCTVPLND   0.0077   0.0182   G removed from alphabet only
+    AA    ASCTVPLND   0.0000   0.0000   G absent from both
+
+################ STATED (msmodel.py parameters)
+   {'pro_enh': 1.6, 'pro_sup': 0.35, 'y_basic': 1.15, 'y_nonbasic': 0.85, 'both_series': True}
+
+-- Table 1: silent vs detected, 18-mers, tau = 0.01 Da, exact masses
+ p_drop   V silent   V detect  NI silent  NI detect
+   0.00     0.0000     0.0468     0.0000     0.0435
+   0.10     0.0000     0.0692     0.0001     0.0657
+   0.20     0.0000     0.1059     0.0002     0.1032
+   0.30     0.0000     0.1552     0.0005     0.1527
+   0.40     0.0000     0.2197     0.0008     0.2176
+
+-- Table 2: planted motifs, silent-error rate
+ motif      decoder    p=0.1    p=0.3   note
+    GG   ASCTVPLNDG   0.0019   0.0090   contains N
+    GA   ASCTVPLNDG   0.0005   0.0020   no Q
+    GA  ASCTVPLNDGQ   0.0016   0.0084   contains Q
+    GG    ASCTVPLND   0.0019   0.0090   G removed from alphabet only
+    AA    ASCTVPLND   0.0000   0.0000   G absent from both
+
+################ MEASURED (calibrated on identified public spectra)
+   {'pro_enh': 1.1, 'pro_sup': 0.79, 'y_basic': 1.0, 'y_nonbasic': 0.55, 'both_series': True}
+
+-- Table 1: silent vs detected, 18-mers, tau = 0.01 Da, exact masses
+ p_drop   V silent   V detect  NI silent  NI detect
+   0.00     0.0000     0.0115     0.0000     0.0110
+   0.10     0.0000     0.0559     0.0002     0.0565
+   0.20     0.0000     0.1140     0.0004     0.1135
+   0.30     0.0000     0.1817     0.0008     0.1806
+   0.40     0.0000     0.2614     0.0012     0.2599
+
+-- Table 2: planted motifs, silent-error rate
+ motif      decoder    p=0.1    p=0.3   note
+    GG   ASCTVPLNDG   0.0039   0.0129   contains N
+    GA   ASCTVPLNDG   0.0009   0.0026   no Q
+    GA  ASCTVPLNDGQ   0.0037   0.0117   contains Q
+    GG    ASCTVPLND   0.0039   0.0129   G removed from alphabet only
+    AA    ASCTVPLND   0.0000   0.0000   G absent from both
